@@ -1,20 +1,28 @@
-# Ignore WordPress core files
-/wp-admin/
-/wp-includes/
-
-# Ignore system files
-.htaccess
-wp-config.php
-error_log
-*.log
-.DS_Store
-
-# Ignore backups
-wp-content/backup/
-wp-content/uploads/
+# Ignore WordPress core files and unnecessary directories
+wp-admin/
+wp-includes/
 wp-content/cache/
+wp-content/backup-db/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
 
-# Ignore unnecessary files
+# Ignore sensitive files
+wp-config.php
+.htaccess
+local-xdebuginfo.php
+
+# Ignore system and editor files
+.DS_Store
+Thumbs.db
+*.log
+*.sql
+*.tar.gz
+*.zip
+.idea/
+.vscode/
 node_modules/
 vendor/
-
