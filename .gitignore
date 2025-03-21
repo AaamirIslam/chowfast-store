@@ -1,7 +1,20 @@
-/wp-content/uploads/
-/wp-content/upgrade/
-/wp-content/cache/
-/wp-content/backup-db/
-/wp-config.php
-/node_modules/
-/vendor/
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+
+# Ignore system files
+.htaccess
+wp-config.php
+error_log
+*.log
+.DS_Store
+
+# Ignore backups
+wp-content/backup/
+wp-content/uploads/
+wp-content/cache/
+
+# Ignore unnecessary files
+node_modules/
+vendor/
+
